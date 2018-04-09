@@ -39,7 +39,7 @@ class TestColorCode < Minitest::Test
     guess = "yyyy"
     assert_equal 1, colorcode.count_elements(guess, answer)
     guess = "qzyx"
-    assert_equal 0, colorcode.count_elements(guess, answer)
+    assert_equal 1, colorcode.count_elements(guess, answer)
   end
 
   # def test_compare
