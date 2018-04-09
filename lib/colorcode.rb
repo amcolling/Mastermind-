@@ -1,45 +1,47 @@
 require 'pry'
 class ColorCode
-  attr_reader :colors,
-              :answer,
-              :guess,
-              :num_correct
+  attr_reader :num_correct,
+              :guess
 
+
+  attr_accessor :colors
 
 
   def initialize
     @colors = %W(r g b y)
-    @answer = []
-    @guess = guess
+    @answer = sample
     @num_correct = 0
-  end
+    @guess = []
 
-  def length
-    @colors.length
   end
 
   def sample
     4.times.map do
       colors.sample
-    end.join
+    end
   end
 
-  def check_colors(guess)
-    answer = @answer.dup.split("")
-    guess.split("").each do |guess|
-      if answer.include? guess
-        index = answer, index (guess)
-        answer[index] = nil
-        num_correct +=1
+  def count_elements(guess, answer = @answer)
+    element_count = 0
+  correct_array = answer.dup
+      guess.chars.each do |check|
+        correct_array.each_with_index do |char, index|
+          if check == char
+            correct_array[index] = nil
+            element_count += 1
+            break
+          end
+        end
       end
+      element_count
   end
-    num_correct
+
+
+    # binding.pry
+    # @guess.each_char.map(&:to_i) do
+    # @colors.zip(@guess)
+    # end
   end
 
-  guess = gets.chomp
 
-
-
-
-
-end
+  # guess = gets.chomp

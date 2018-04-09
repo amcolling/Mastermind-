@@ -13,7 +13,7 @@ class TestGame < Minitest::Test
   def test_player
     game = Game.new
     assert_equal "", game.player
-  end 
+  end
 
   def test_guess
     game = Game.new
@@ -29,4 +29,8 @@ class TestGame < Minitest::Test
     game = Game.new
     assert_equal 5 , game.guess.length
   end
+
+   
+
+
 end

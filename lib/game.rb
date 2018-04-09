@@ -9,12 +9,14 @@ def initialize
 end
 
 def guess_too_short?
-  player_guess.guess.length < 4
+  player_guess.guess.length <= 4
 end
 
 def guess_too_long?
   player_guess.guess.length > 4
 end
+
+
 
 
 
