@@ -12,14 +12,32 @@ class TestColorCode < Minitest::Test
   def test_new_code_is_four_characters_long
     colorcode  = ColorCode.new
     assert_equal 4, colorcode.length
-    end
-
+  end
+  
   def test_colors
     colorcode = ColorCode.new
     assert_equal ["r", "g", "b","y"], colorcode.colors
   end
 
-  
+  def test_compare
+    colorcode = ColorCode.new
+    assert_equal ["r", "g", "b", "y"], colorcode.colors
+  end
+
+  def test_answer
+    colorcode = ColorCode.new
+    assert_equal [], colorcode.answer
+  end
+
+  def test_guess
+    colorcode = ColorCode.new
+    assert_equal nil , colorcode.guess
+  end
+
+  def test_num_correct
+    colorcode =  ColorCode.new
+    assert_equal 0, colorcode.num_correct
+  end
 
 end
 # Starting a Game
