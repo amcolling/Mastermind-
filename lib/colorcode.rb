@@ -31,7 +31,6 @@ class ColorCode
         index = answer, index (guess)
         answer[index] = nil
         num_correct +=1
-
       end
   end
     num_correct
