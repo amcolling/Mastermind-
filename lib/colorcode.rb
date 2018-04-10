@@ -4,7 +4,8 @@ class ColorCode
               :guess
 
 
-  attr_accessor :colors
+  attr_accessor :colors,
+                :answer
 
 
   def initialize
@@ -37,10 +38,7 @@ class ColorCode
   end
 
 
-    # binding.pry
-    # @guess.each_char.map(&:to_i) do
-    # @colors.zip(@guess)
-    # end
+
   end
 
 

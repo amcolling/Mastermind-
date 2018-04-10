@@ -10,7 +10,9 @@ class TestDialogue < Minitest::Test
     assert_instance_of Dialogue, dialogue
   end
 
-  def test_intro
+  def test_menu_system
     dialogue = Dialogue.new
-    assert_equal 
+    expected = "Welcome to MASTERMIND"
+    assert_equal expected, dialogue.system
+  end
 end
