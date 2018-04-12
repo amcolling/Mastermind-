@@ -13,7 +13,6 @@ class ColorCode
     @answer = sample
     @num_correct = 0
     @guess = []
-
   end
 
   def sample
