@@ -1,12 +1,12 @@
 require 'pry'
 class ColorCode
   attr_reader :num_correct,
-              :guess
+  :guess
 
 
   attr_accessor :colors,
-                :answer
-
+  :answer
+  
 
   def initialize
     @colors = %W(r g b y)
@@ -24,22 +24,22 @@ class ColorCode
 
   def count_elements(guess, answer = @answer)
     element_count = 0
-  correct_array = answer.dup
-      guess.chars.each do |check|
-        correct_array.each_with_index do |char, index|
-          if check == char
-            correct_array[index] = nil
-            element_count += 1
-            break
-          end
+    correct_array = answer.dup
+    guess.chars.each do |check|
+      correct_array.each_with_index do |char, index|
+        if check == char
+          correct_array[index] = nil
+          element_count += 1
+          break
         end
       end
-      element_count
+    end
+    element_count
   end
 
 
 
-  end
+end
 
 
-  # guess = gets.chomp
+# guess = gets.chomp

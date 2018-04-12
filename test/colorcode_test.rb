@@ -21,7 +21,7 @@ class TestColorCode < Minitest::Test
     assert_equal 4, sample.length
     assert_instance_of String, sample[0]
     actual = (sample[0] == "r") || (sample[0] == "y") || (sample[0] == "b") || (sample[0] == "g")
-    end
+  end
 
 
   def test_colors
@@ -47,6 +47,6 @@ class TestColorCode < Minitest::Test
     assert_equal 0, colorcode.num_correct
   end
 
-
+  
 
 end

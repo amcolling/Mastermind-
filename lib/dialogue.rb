@@ -1,3 +1,4 @@
+
 class Dialogue
   attr_reader :player
 
@@ -15,7 +16,15 @@ class Dialogue
     end
   end
 end
+  end
 
+  def game
+     if user_input == @colors
+      puts "you win"
+    else
+      puts "try again!"
+      binding.pry
+    end
   end
 
 
