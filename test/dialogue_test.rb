@@ -3,6 +3,7 @@ require './lib/colorcode'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/dialogue'
+require './lib/game'
 
 class TestDialogue < Minitest::Test
   def test_it_exists

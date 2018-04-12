@@ -28,10 +28,7 @@ end
   end
 
 
-  def quit
-  user_input == "q"
-    puts "goodbye"
-  end
+
 
 
 

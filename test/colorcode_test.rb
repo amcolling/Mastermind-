@@ -2,6 +2,7 @@ require 'pry'
 require './lib/colorcode'
 require 'minitest/autorun'
 require 'minitest/pride'
+require './lib/dialogue'
 
 class TestColorCode < Minitest::Test
   def test_it_exists
@@ -47,6 +48,6 @@ class TestColorCode < Minitest::Test
     assert_equal 0, colorcode.num_correct
   end
 
-  
+
 
 end

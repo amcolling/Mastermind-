@@ -1,7 +1,7 @@
 
 class Game
   attr_reader :player,
-  :guess
+              :guess
 
   def initialize
     @player = player

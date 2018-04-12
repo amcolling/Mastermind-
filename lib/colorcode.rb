@@ -1,12 +1,12 @@
 require 'pry'
 class ColorCode
   attr_reader :num_correct,
-  :guess
+              :guess
 
 
   attr_accessor :colors,
-  :answer
-  
+                :answer
+
 
   def initialize
     @colors = %W(r g b y)
